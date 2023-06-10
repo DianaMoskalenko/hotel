@@ -41,7 +41,7 @@ public class ReservationService {
                 .number(reservation.getRoom().getRoomNumber())
                 .price(reservation.getRoom().getPrice())
                 .maxGuests(reservation.getRoom().getMaxGuests())
-                .isAvailable(reservation.getRoom().isAvailable())
+                .isAvailable(reservation.getRoom().getIsAvailable())
                 .build();
 
         List<GuestDto> guestDtos = reservation.getGuests().stream()
@@ -86,7 +86,7 @@ public class ReservationService {
         return optionalRoom.get();
     }
     private void checkRoomAvailability(Room room) {
-        if (!room.isAvailable()) {
+        if (!room.getIsAvailable()) {
             throw new IllegalStateException("Room is not available for reservation.");
         }
     }

@@ -39,7 +39,7 @@ public class RoomService {
                 .number(room.getRoomNumber())
                 .price(room.getPrice())
                 .maxGuests(room.getMaxGuests())
-                .isAvailable(room.isAvailable())
+                .isAvailable(room.getIsAvailable())
                 .build();
     }
     public Optional<Room> findByRoomNumber(int roomNumber) {

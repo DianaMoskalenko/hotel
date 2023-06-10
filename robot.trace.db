@@ -16,3 +16,19 @@ SELEST * FROM GUEST [42001-214]
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*]SELEST * FROM GUEST"; ожидалось "SAVEPOINT, SCRIPT, SHUTDOWN, SHOW"
 Syntax error in SQL statement "[*]SELEST * FROM GUEST"; expected "SAVEPOINT, SCRIPT, SHUTDOWN, SHOW"; SQL statement:
 SELEST * FROM GUEST [42001-214]
+2023-06-10 16:22:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
+2023-06-10 16:24:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
+2023-06-10 16:24:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
+2023-06-10 16:24:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
+2023-06-10 16:24:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
+2023-06-10 16:24:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
+2023-06-10 16:24:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]
+2023-06-10 16:24:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: The object is already closed [90007-214]

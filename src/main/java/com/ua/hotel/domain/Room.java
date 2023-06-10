@@ -16,22 +16,22 @@ public class Room {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column
-    private int roomNumber;
+    private Integer roomNumber;
     @Column
-    private double price;
+    private Double price;
     @Column
-    private int maxGuests;
+    private Integer maxGuests;
     @Column
     private String roomType;
     @Column
-    private boolean isAvailable;
+    private Boolean isAvailable;
 
     @OneToMany(mappedBy = "room")
     private List<Guest> guests;
 
     @OneToMany(mappedBy = "room")
     private List<Reservation> reservations;
-    public void setIsAvailable(boolean isAvailable) {
+    public void setIsAvailable(Boolean isAvailable) {
         this.isAvailable = isAvailable;
     }
 
